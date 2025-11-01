@@ -1,0 +1,28 @@
+🔍 Example 1: Simple fuzzy search
+{
+ 'query': 'swift',
+ 'suggestions': ['Maruti Swift'],
+ 'results': [
+   {'id': 1, 'name': 'Maruti Swift', 'fuel': 'Petrol', 'mileage': 20, 'year': 2018, 'transmission': 'Manual', 'relevance_score': 0.91}
+ ]
+}
+
+🔍 Example 2: Filtered search (diesel cars after 2019)
+{
+ 'query': 'creta',
+ 'suggestions': ['Hyundai Creta'],
+ 'results': [
+   {'id': 2, 'name': 'Hyundai Creta', 'fuel': 'Diesel', 'mileage': 17, 'year': 2020, 'transmission': 'Automatic', 'relevance_score': 0.9},
+   {'id': 5, 'name': 'Mahindra XUV700', 'fuel': 'Diesel', 'mileage': 15, 'year': 2023, 'transmission': 'Automatic', 'relevance_score': 0.52}
+ ]
+}
+
+🔍 Example 3: Predictive typing (query='hyu')
+{
+ 'query': 'hyu',
+ 'suggestions': ['Hyundai Creta', 'Hyundai i20'],
+ 'results': [
+   {'id': 2, 'name': 'Hyundai Creta', 'fuel': 'Diesel', 'mileage': 17, 'year': 2020, 'transmission': 'Automatic', 'relevance_score': 0.73},
+   {'id': 6, 'name': 'Hyundai i20', 'fuel': 'Petrol', 'mileage': 21, 'year': 2021, 'transmission': 'Manual', 'relevance_score': 0.72}
+ ]
+}
